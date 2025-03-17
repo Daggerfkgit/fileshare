@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unity File Sharing Platform</title>
+  <link rel="styleshehttp://localhost:3000/fileset" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Unity File Sharing Platform</h1>
+    <p>Upload, share, and download Unity files easily.</p>
+  </header>
+
+  <main>
+    <!-- File Upload Form -->
+    <section>
+      <h2>Upload a Unity File</h2>
+      <form id="uploadForm" enctype="multipart/form-data">
+        <label for="fileInput">Select a file (supported formats: .unitypackage, .dll, .cs, .prefab, .scene)</label>
+        <input type="file" id="fileInput" name="file" required>
+        <button type="submit">Upload</button>
+      </form>
+    </section>
+
+    <!-- Files Section -->
+    <section id="filesSection">
+      <h2>Shared Files</h2>
+      <ul id="filesList">
+        <!-- Uploaded files will be dynamically displayed here -->
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Unity File Sharing Platform. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
